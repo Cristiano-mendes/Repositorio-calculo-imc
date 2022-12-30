@@ -1,21 +1,26 @@
 package com.imc.controller;
 
+import java.text.DecimalFormat;
+
 import com.imc.model.ImcModel;
 import com.imc.view.ImcView;
 
 public class ImcController {
 	public ImcController() {}
 	
-	public Double CalcularImc (ImcView view) {
+	public double CalcularImc (ImcView view) {
 		ImcModel calculo = new ImcModel();
-		double altura = Double.parseDouble(view.getTxtAltura().getText());
-		double peso = Double.parseDouble(view.getTxtPeso().getText());
-		calculo.calcularImc(altura, peso);
-		Double resp = (peso/(altura*altura));
+		String altura = view.getTxtAltura().getText();
+		String peso = view.getTxtPeso().getText();		
+				
+		String a = altura.replace(",", ".");
+		String b = peso.replace(",", ".");
+		return calculo.calcularImc(Double.parseDouble(b), Double.parseDouble(a));
+		//double imc =  Double.parseDouble(peso)/(Double.parseDouble(a)*2);	
+
 		
-		String res = String.format("%s", resp);
+
 	 	
-	 	return resp;
 	 	 
 	 
 	}

@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.net.URI;
 import java.text.DecimalFormat;
+import java.util.Locale;
+
 import javax.swing.*;
 import com.imc.controller.ImcController;
 
@@ -11,6 +13,8 @@ public class ImcView extends JFrame implements ActionListener, KeyListener{
 	/**
 	 * 
 	 */
+	
+
 	private static final long serialVersionUID = 1L;
 	ImageIcon fundo = new ImageIcon(this.getClass().getResource("recursos/IMC.jpg"));
 	ImageIcon imcIcon = new ImageIcon(this.getClass().getResource("recursos/IMCicon.jpg"));
@@ -33,6 +37,7 @@ public class ImcView extends JFrame implements ActionListener, KeyListener{
 	
 	
 	public ImcView() {
+		Locale.setDefault(new Locale("pt","BR") );
 		setBounds(300,100,fundo.getIconWidth(), fundo.getIconHeight());
 		setIconImage(imcIcon.getImage());
 		setLayout(null);
@@ -205,9 +210,9 @@ public class ImcView extends JFrame implements ActionListener, KeyListener{
 
 	@Override
 	public void keyTyped(KeyEvent e) {
-			if(txtIdade.getText().length()>=3) {txtIdade.setText(null);}
-			if(txtPeso.getText().length()>=4) {txtPeso.setText(null);}
-			if(txtAltura.getText().length()>=5) {txtAltura.setText(null);}			
+			if(txtIdade.getText().length()>=3) {txtIdade.setText(txtIdade.getText().substring(0,2));}
+			if(txtPeso.getText().length()>=6) {txtPeso.setText(txtPeso.getText().substring(0,5));}
+			if(txtAltura.getText().length()>=4) {txtAltura.setText(txtAltura.getText().substring(0,3));}			
 	}
 	@Override
 	public void keyPressed(KeyEvent e) {}
