@@ -1,6 +1,6 @@
 # Calculadora de IMC (Índice de Massa Corporal)
 
-<img src="screenshots/screen1.png" alt="calcimc" style="width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+<img src="screenshots/screen1.PNG" alt="calcimc" style="width: 300px; border: 1px solid #ccc; border-radius: 5px;">
 
 
 Esta é uma calculadora de IMC simples desenvolvida em Java para desktop. O IMC é uma medida utilizada para avaliar se uma pessoa está dentro do peso adequado em relação à sua altura.
@@ -18,8 +18,8 @@ https://drive.google.com/file/d/19No5VN1M_S645n5LXeVlhSvJjHsiOhg_/view?usp=shari
 ## Capturas de Tela
 
 <div>
-  <img src="screenshots/screen2.png" alt="calcimc2" style="width: 300px; border: 1px solid #ccc; border-radius: 5px;">
-  <img src="screenshots/screen3.png" alt="calcimc3" style="width: 300px; border: 1px solid #ccc; border-radius: 5px;">  
+  <img src="screenshots/screen2.PNG" alt="calcimc2" style="width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+  <img src="screenshots/screen3.PNG" alt="calcimc3" style="width: 300px; border: 1px solid #ccc; border-radius: 5px;">  
 </div>
 
 
